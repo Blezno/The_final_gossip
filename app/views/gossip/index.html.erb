@@ -1,0 +1,10 @@
+<h1>Gossip</h1>
+<% @gossip.each do |e|%>
+    <p>Title : <%=e.title %></p>
+    <p>Gossip : <%=e.content %></p>
+    <p>Nom : <%=e.user.first_name %></p>
+    <p>
+    <a href="gossip_path(gossip.id)" class="btn btn-primary"> Wanna know more ? </a>
+    </p>
+
+    <%end%>
